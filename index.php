@@ -1,4 +1,7 @@
 <?php
+
+$map = 'saw';
+$login = 'nyuan';
 parse_str($_SERVER["QUERY_STRING"]);
 
 if ($map === 'saw'){
@@ -9,6 +12,7 @@ if ($map === 'saw'){
 	}
 	echo($map);
 	echo($login);
+	file_put_contents('seed/lastSeed', $trapLocations);
 }
 
 
