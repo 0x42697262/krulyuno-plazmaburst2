@@ -1,5 +1,5 @@
 <?php
-$user = $_POST['user_uid'];
+$user = $_POST['user_login'];
 $map = '';
 
 parse_str($_SERVER["QUERY_STRING"]);
