@@ -10,7 +10,7 @@ if ($map === 'saw'){
 		file_put_contents('seed/'.$user.'_'.$i, $trapLocations[$i]);
 	}
 	
-	file_put_contents('seed/lastSeed', $trapLocations);
+	file_put_contents('seed/lastSeed', implode('/',$trapLocations));
 }
 
 
